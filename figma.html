@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="/figma.css">
+   
+    <style>*{
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        
+        font-family: Arial, sans-serif;
+        background: #FEFCFB;
+    }
+    
+    .navbar {
+        width: 1170px;
+    height: 114px;
+    flex-shrink: 0;
+    background: #FEFCFB;
+    }
+    
+    /* Aligns the navbar items to the right */
+    .navbar-nav {
+        color: #222;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+        margin-left: auto; /* Pushes the nav items to the right */
+    }
+    
+    .navbar h1 {
+        color: var(--Primary-B, #222);
+        font-family: Volkhov;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 100% */
+        letter-spacing: 0.144px;
+        padding-bottom: 5px;
+    
+    }
+    
+    
+     
+    .navbar-icon img {
+        vertical-align: middle;
+    }
+    
+    .nav-link {
+        font-weight: bold;
+    }
+    
+    /* Orange color for Login button */
+    .btn-outline-success {
+        margin-left: 10px;
+        color: white; /* Change text color to white for better contrast */
+        border-color: #FA7436; /* Border color for the button */
+    }
+    
+    /* Background color for Signup button */
+    .btn-signup {
+        border-radius: 5px;
+    background: #FA7436;
+    color: black;
+    box-shadow: 0px 8px 16px 0px rgba(250, 116, 54, 0.24);
+    }
+    
+    .btn-login {
+        color: #FD8D3A;
+        text-align: right;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        background: white;
+    }
+    h1{
+        color: #222;
+    font-family: Volkhov;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px; /* 109.375% */
+    width: 521px;
+    margin-left: 25%;
+    margin-top: 10%;
+    margin-right: 5%;
+    
+    }
+    
+    .journy{
+        color: var(--Primary-O, #FA7436);
+        font-family: Volkhov;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 70px;
+      
+        margin-right: 5%;
+        width: 521px;
+    } 
+    .pera{
+        color: var(--Paragraph,#666666);
+    
+    /* Paragraph-20px */
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    margin-left: 20%;
+    margin-top: 6%;
+    width: 521px;
+    
+    
+    }
+    .images{
+        /* width: 200px;
+    height: 00px;
+    flex-shrink: 0; */
+    margin-left: 20%;
+    
+    /* background: url(<<path-to-image>>) white -80.27px -25.341px / 134.595% 105.534% no-repeat; */
+    }
+    .btn-light{
+        color: var(--Primary-O, #FA7436);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 177.778% */
+    border-radius: 5px;
+    border: 1px solid var(--Primary-O, #FA7436);
+    background: #FFF;
+    display: inline-flex;
+    padding: 14px 28px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    margin-left: 25%;
+    }
+    
+    .search-section {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    .search-container {
+        display: flex;
+        background-color: white;
+        padding: 20px;
+        margin-left: 20%;
+      
+        /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+    }
+    
+    .search-item {
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 5%;
+        font-size: x-small;
+    }
+    .box{
+        display: flex;
+      
+        width: 841px;
+    height: 124px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 2px 80px 2px rgba(0, 0, 0, 0.06);
+    }
+    
+    
+    
+    .search-item select {
+        margin-left:0% ;
+        border:none;    
+       
+        stroke-width: 2px;
+      color: #ff7f00;
+        width:10px;
+    height: 5px;
+    flex-shrink: 0;
+    
+       
+    }
+    
+    .search-button {
+        display: flex;
+        align-items: center;
+    
+    }
+    
+    .explore-btn {
+        background-color: orange;
+        color: white;
+        border: none;
+        padding: 8px;
+        border-radius: 5px;
+        font-size: 10px;
+        cursor: pointer;
+        justify-content:space-between;
+    
+     
+        transition: background-color 0.3s ease;
+    }
+    
+    .explore-btn:hover {
+        background-color: #ff7f00;
+    }
+    
+     .image-with-cards {
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    
+    .image-container {
+        position: relative;
+        width: 400px; /* Adjust to your image's width */
+        height: auto;
+    }
+    
+    .traveler-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .card {
+        position: absolute;
+        background-color: white;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 10px;
+        font-family: Poppins, sans-serif;
+        font-size: 14px;
+        color: #333;
+    }
+    
+    /* First card - Top left */
+    .best-tour {
+       
+    /* margin-right: 20px; */
+      margin-top: 110px;
+      margin-right: 20%;
+     width: 110px; 
+    
+    color: var(--Color-B-1, #444);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+    box-shadow: -8px 8px 40px 0px rgba(0, 0, 0, 0.05);  
+    
+    } 
+    
+    /* Second card - Middle right */
+    .explore {
+        top: 50%;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 130px;
+        transform: translateY(-50%);
+        margin-right: 5%;
+        height: 80px;
+        color: #666;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+    
+        margin-top: 45px;
+        line-height: 16px; /* 133.333% */
+     
+    }
+    
+    
+    /* Third card - Bottom left */
+    .review {
+        bottom: 20px;
+        left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 150px;
+        margin-left: 750px;
+        margin-bottom: 45px; 
+    }
+    
+    
+    /* Customize the card styles */
+    .card p {
+        margin: 0;
+    }
+    
+    .card img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    .need{
+        color:#222;
+    /* Section Title */
+    font-family: Volkhov;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px; /* 112.5% */
+    text-align: center;
+    margin-top: 120px;
+    /* margin-bottom: 5%; */
+    }
+    .per{
+        color: #666;
+    text-align: center;
+    
+    /* Paragraph-18px */
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+    }
+    .color{
+        border-radius: 8px;
+    border: 2px solid rgba(102, 102, 102, 0.08);
+    background: #FA7436;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    .custom-card {
+        width: 370px;
+    height: 278px;
+    flex-shrink: 0;
+      
+        border: 1px solid #ccc; /* Border of the card */
+        border-radius: 8px; /* Rounded corners */
+        overflow: hidden; /* Ensures child elements don't overflow */
+        display: flex; /* Use flexbox for alignment */
+        flex-direction: column; /* Stack children vertically */
+        justify-content: flex-end; /* Align children to the end (bottom) */
+    }
+    
+    .custom-card-img {
+        width: 20%; /* Image ki width ko 20% par rakhein */
+        height: auto; /* Aspect ratio maintain karne ke liye */
+        margin-top: 5%; /* Upar se margin ko kam kar diya */
+        margin-bottom: 10%;
+        display: block; /* Ensure that the image is treated as a block element */
+        margin-left: 3%; 
+    }
+    
+    .custom-card-body {
+        background: #FFF8F5;
+        padding: 16px; /* Padding around the body content */
+    }
+    
+    .custom-card-title {
+        margin: 0; /* Remove default margin */
+        font-size: x-large; /* Increase font size */
+    }
+    
+    .custom-card-text {
+        margin-top: 8px; /* Space between title and text */
+        font-size: 1em; /* Default font size */
+    }
+    
+    
+    .madrid{
+        color: #222;
+    text-align: left;
+    
+    /* Title-24px */
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: medium;
+    font-weight: 500;
+    margin-top: 10%;
+    line-height: 26px; /* 108.333% */
+    }
+    .blogs{
+        border-radius: 8px;
+    /* background: url(<path-to-image>) lightgray 50% / cover no-repeat; */
+    color: var(--Paragraph, #666);
+    text-align: right;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    }
+    .location{
+        color: var(--Paragraph, #666);
+    text-align: left;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    }
+    .btn{
+        color: var(--Primary-O, #FA7436);
+    text-align: right;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    border-radius: 8px;
+    background: #FFE7DB;
+    
+    }
+    .price{
+        text-align: right;
+        justify-content: space-between;
+    }
+    .t-price{
+        text-align: right;
+        color: #FA7436;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 133.333% */
+    }
+    .plane{
+        margin-left: 10%;
+    }
+    
+    
+    body {
+        background-color: #f5f7fa;
+    }
+    
+    .testimonial-section {
+        padding: 50px 0;
+        position: relative;
+    }
+    
+    .testimonial-section h2 {
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+    
+    .testimonial-section h2 span {
+        color: #f97316; /* Orange color for 'about us' */
+    }
+    
+    .testimonial-section p {
+        font-size: 1.2rem;
+        color: #6c757d;
+    }
+    
+    .testimonial-card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        position: relative;
+        margin-bottom: 20px;
+        z-index: 2;
+        width: 80%;
+    }
+    
+    .testimonial-card img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        position: absolute;
+        top: -30px;
+        left: -30px;
+        border: 3px solid white;
+    }
+    
+    .testimonial-card blockquote {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+    
+    .testimonial-card .author {
+        font-weight: bold;
+    }
+    
+    .testimonial-card .location {
+        font-size: 0.9rem;
+        color: #6c757d;
+    }
+    
+    /* Nested section for Chris Thomas */
+    .nested-card {
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 110%;
+        z-index: 1;
+        background-color: #e1e8ee;
+    }
+    
+    .nested-card p {
+        margin: 0;
+    }
+    
+    .nested-card .author {
+        font-weight:small;
+        text-align: left;
+        color:rgb(160, 157, 157);
+    }
+    
+    .nested-card .position {
+        text-align: left;
+        color:rgb(160, 157, 157);
+    }
+    
+    /* Buttons */
+    .testimonial-navigation {
+        position: absolute;
+       
+        top: 80%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+    }
+    
+    .testimonial-navigation button {
+        background-color: #f97316;
+        color: #fff;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        margin-right: 10px;
+    }
+    
+    .testimonial-navigation button:focus {
+        outline: none;
+    }
+    
+    .testimonial-navigation button:hover {
+        background-color: #e05b0b;
+    }
+    
+    /* Airplane graphic (optional) */
+    .airplane-graphic {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .date{
+        color: #999;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    }
+    .slider{
+        width: 100%;
+       text-align: center;
+    }
+    .col-sm-8{
+        color: #FFF;
+    text-align: center;
+    font-family: Volkhov;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 10%;
+    padding-top: 5%;
+    background-color: #e05b0b;
+    }
+    
+    
+    footer{
+        background-color: #F7F8FC;
+        border-top: solid 1px black;
+    }
+    .copy{
+        color:  #666;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-align:justify;
+    line-height: normal;
+    }
+    .right{
+        color:  #666;
+    text-align: right;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+    
+    .about{
+        display: flex;
+        justify-content: center;
+        padding: 53px;
+    }
+    .about .aboutText{
+        margin-inline: 70px;
+        color: #666;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 144.444% */
+    }
+    .aboutText p{
+        margin-top: 11px;
+        color: #666666;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 144.444% */
+    }
+    
+    .insta{
+        background-image: url(/Background.svg);
+        width: 100%;
+        height: 100%;
+        background-repeat:no-repeat;
+       color: #e05b0b;
+    }
+    .form-control{
+        width: 60%;
+        align-items: right;
+    }
+    .subscribe-banner {
+        background-color: #FF6F20; /* Orange background */
+        padding: 30px 50px;
+        text-align: center;
+        position: relative;
+      
+        width: 66.66667%; /* Equivalent to col-8 */
+        padding-bottom: 5%; /* Increase bottom padding */
+        border-radius: 10px; /* Optional for smooth edges */
+    }
+    
+    /* Styling for text content */
+    .subscribe-content h2 {
+        color: white;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        margin-top: 5%;
+    }
+    
+    /* Styling for the form */
+    .subscribe-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+        margin-top: 10%;
+        margin-left: 30%;
+       
+        width: 250px;
+    }
+    
+    /* Input box styling */
+    .subscribe-form input[type="email"] {
+        padding: 10px 15px;
+        border: none;
+       
+    
+        outline: none;
+        width: 300px;
+        border-radius: 10px 0 0 10px;
+    }
+    
+    /* Button styling */
+    .subscribe-form button {
+        padding: 10px 25px;
+        border: none;
+       
+        border-radius: 0 10px 10px 0;
+        background-color: white;
+        color: #FF6F20;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    /* Button hover effect */
+    .subscribe-form button:hover {
+        background-color: #ffe6d2; /* Slightly lighter shade of orange on hover */
+    }
+    
+    /* Styling for background decorations */
+    .subscribe-banner::after {
+        content: '';
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 100px;
+        height: 100px;
+        background-image: url('/Element\ vecation.png'); /* Placeholder for palm tree decoration */
+        background-repeat: no-repeat;
+    }
+    
+        /* Main container for social icons */
+     .social-icons {
+       margin-right: 5%;
+    } 
+    
+    /* Styling for individual icon wrapper */
+    .icon-wrapper {
+        margin: 10px; /* Adds space between icons */
+    }
+    
+    /* Common styles for social icons */
+    .social-icon {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: white; /* White background for all icons */
+        color: #000; /* Default icon color */
+        font-size: 24px;
+        text-decoration: none;
+        transition: background-color 0.3s ease-in-out;
+    }
+    
+    /* Instagram specific style (with orange background) */
+    .social-icon.instagram {
+        background-color: #FF6F20; /* Orange background */
+        color: white;
+    }
+    
+    /* Hover effect for all icons */
+    .social-icon:hover {
+        background-color: #ddd; /* Light background on hover */
+    }
+    
+    /* Icon color customization */
+    .social-icon.facebook i {
+        color: #4267B2; /* Facebook blue */
+    }
+    
+    .social-icon.instagram i {
+        color: white; /* Instagram white */
+    }
+    
+    .social-icon.twitter i {
+        color: #1DA1F2; /* Twitter blue */
+    }
+    
+    
+    
+     @media screen and(max-width:920px) {
+    
+        .navbar {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        h1 {
+            font-size: 40px; /* Reduced heading size */
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    
+        .subscribe-form {
+            flex-direction: column; /* Stack form elements */
+            width: 100%;
+        }
+    
+        .search-container {
+            flex-direction: column; /* Stack search items */
+            margin-left: 0; /* Center on smaller screens */
+        }
+    
+        .btn-light {
+            width: 100%;
+        }
+    }
+     </style>
+
+    <title>Trabook</title>
+</head>
+<body>
+   <div class="container">
+        <section style="background-color: #FEFCFB;"  class="container">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <h1>Trabook <span class="navbar-icon"><img src="/Vector.png" alt="Logo" style="width: 30px;"></span></h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Destination</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tour</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <button class="btn btn-login" type="button">Login</button>
+                            <button class="btn btn-signup" type="button">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                
+                <div class="row">
+                  <div class="col-5">
+
+                
+            <h1>Get started your exciting <span class="journy">journey</span> 
+                with us.
+                </h1>
+                
+                <p class="pera">A Team of experienced tourism professionals will provide you with the best advice and tips for your desire place. </p>
+                <button class="btn btn-light">
+                    Discover Now
+                  </button>     
+            </div>
+                  <div class="col-4 images">
+                    <div class="card best-tour"> 
+                        <p><span> <img src="/trophy-removebg-preview 1.png" alt=""></span>Best Tour Awards</p>
+                    </div>
+                    <img src="/tourist-with-thumb-up__1_-removebg 1.png" alt="">
+                    
+                    <div class="card explore">
+                        <p class="exp"> <span>  <img src="/google-maps 1.png" alt="Explore Icon"></span><b>Explore</b> <br> Every corner of the world with us</p>
+                        
+                    </div>
+                    <div class="card review rev">
+                        <p><span>⭐</span> 27K <br> Customer Review</p>
+                    </div>
+                  </div>
+                  <div class="container  box">
+                  <div class="search-container">
+                    <div class="search-item">
+                        <h5>location <span><img src="/Vector 4855.svg" alt=""></span></h5>
+                        
+                        <p>where are you going</p>
+                    </div>
+                    <div class="search-item">
+                        <h5>Date <span><img src="/Vector 4855.svg" alt=""></span></h5>
+                        <p>When you will go</p>
+                    </div>
+                    <div class="search-item">
+                        <h5> Guest <span><img src="/Vector 4855.svg" alt=""></span></h5>
+                       
+                        <p>Number of guests</p>
+                    </div>
+                    <div class="search-button">
+                        <button class="explore-btn">Explore Now</button>
+                    </div>
+                </div>
+            </div>
+                
+                </div>
+              </div>
+        </section>
+    
+    
+<section style="background-color: #F7F8FC;">
+      <div class="container">
+        <h2 class="need">Things you need <span class="journy">to do</span> <span class="plane"><img src="/plane.png" alt=""></span></h2>
+        
+        <p class="per">We ensure that you’ll embark on a perfectly planned, safe vacation at a price you can afford. </p>
+            <div class="row">
+                <div class="col-4">
+                    <div class="custom-card">
+                        <img src="/Group.png" class="custom-card-img" alt="Sign up image">
+                        <div class="custom-card-body">
+                            <h3 class="custom-card-title">Sign up</h3>
+                            <p class="custom-card-text">Completes all the work associated with planning and processing</p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="col-4 ">
+                    <div class="card color"style="width: 370px; height: 278px;">
+                        <!-- <img src="/Vector 4856.png" class="card-img-top" alt="..."> -->
+                        <div class="card-body ">
+                         
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="custom-card" style="width: 370px; height: 278px;">
+                        <img src="/Group2.png" class="custom-card-img" alt="...">
+                        <div class="custom-card-body">
+                          <h5 class="custom-card-title">Exciting Travel
+                        </h5>
+                          <p class="custom-card-text">Start and explore a wide range of exciting travel experience..</p>
+                        
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+
+        </div>
+</section>
+
+
+<section style="background-color: #FEFCFB;">
+    <div class="container">
+      <h2 class="need">Exclusive  <span class="journy">deals & discounts</span></h2>
+      <p class="per">Discover our fantastic early booking discounts & start planning your journey.
+    </p>
+          <div class="row blog ">
+              <div class="col-3 ">
+                <img src="/Image.png" alt="">
+                    <h2 class="madrid">Madrid </h2>
+                    <p class="blogs"><span><img src="/star 1.png" alt=""></span>4.8</p>
+                    <p class="location"><span><img  src="/Vector map.svg "  alt=""> </span>spain</p>
+                    <p class="price">$950 <span><button class="btn">$850</button></span></p>
+                    </div>
+              
+              <div class="col-3 ">
+                  <img src="/Image (1).png" alt="">
+                  <h2 class="madrid">Firzen </h2>
+                    <p class="blogs"><span><img src="/star 1.png" alt=""></span>4.8</p>
+                    <p class="location"><span><img  src="/Vector map.svg "  alt=""> </span>Itly</p>
+                    <p class="price">$850 <span><button class="btn">$750</button></span></p>
+              </div>
+              <div class="col-3">
+                <img src="/Image (2).png" alt="">
+                <h2 class="madrid">Paris </h2>
+                    <p class="blogs"><span><img src="/star 1.png" alt=""></span>4.4</p>
+                    <p class="location"><span><img  src="/Vector map.svg "  alt=""> </span>France</p>
+                    <p class="price">$699 <span><button class="btn">$599</button></span></p>
+              </div>
+              <div class="col-3">
+                <img src="/Image (3).png" alt="">
+                <h2 class="madrid">Landon </h2>
+                    <p class="blogs"><span><img src="/star 1.png" alt=""></span>4.8</p>
+                    <p class="location"><span><img  src="/Vector map.svg "  alt=""> </span>UK</p>
+                    <p class="price">$850 <span><button class="btn">$850</button></span></p>
+              </div>
+
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <img src="/Image (4).png" alt="">    
+              <h2 class="madrid">Lahore </h2>
+                    <p class="blogs"><span><img src="/star 1.png" alt=""></span>4.4</p>
+                    <p class="location"><span><img  src="/Vector map.svg "  alt=""> </span>Ahahdra</p>
+                    <p class="price">$699 <span><button class="btn">$599</button></span></p>  
+            </div>
+            <div class="col-3 ">
+                <img src="/Image (5).png" alt="">
+                <h2 class="madrid">Sindh </h2>
+                    <p class="blogs"><span><img src="/star 1.png" alt=""></span>4.8</p>
+                    <p class="location"><span><img  src="/Vector map.svg "  alt=""> </span>PK</p>
+                    <p class="price">$850 <span><button class="btn">$850</button></span></p>
+            </div>
+            <div class="col-3">
+              <img src="/Image (6).png" alt="">
+              <h2 class="madrid">Shekhupura </h2>
+                    <p class="blogs"><span><img src="/star 1.png" alt=""></span>4..4</p>
+                    <p class="location"><span><img  src="/Vector map.svg "  alt=""> </span>PK</p>
+                    <p class="price">$699 <span><button class="btn">$599</button></span></p>
+            </div>
+            <div class="col-3">
+              <img src="/Image (7).png" alt="">
+              <h2 class="madrid">Krachi </h2>
+                    <p class="blogs"><span><img src="/star 1.png" alt=""></span>4.8</p>
+                    <p class="location"><span><img  src="/Vector map.svg "  alt=""> </span>PK</p>
+                    <p class="price">$850 <span><button class="btn">$750</button></span></p>
+            </div>
+
+        </div>
+
+      </div>
+</section>
+<section style="background-color: #FEFCFB;">
+    <div class="container">
+      <h2 class="need">Best <span class="journy"> vacation plan</span> <span><img src="/Element vecation.png" alt=""></span></h2>
+      <p class="per">Plan your perfect vacation with our travel agency. Choose among hundreds of all-inclusive offers! 
+    </p>
+          <div class="row">
+            <div class="col-4 ">
+                <img src="/Image p.png" alt="">
+                    <h2 class="madrid">Rome, Italty </h2>
+                    <p class="t-price">5.42k</p>
+                    <p class="location"><span><img  src="/Navigation.png "  alt=""> </span>10 Days Trip</p>
+                  
+                    <p class="blogs"><span><img src="/star 1.png" alt=""></span>4.8</p>
+                    </div>
+                    <div class="col-4 ">
+                        <img src="/Image (p1).png" alt="">
+                            <h2 class="madrid">London,UK </h2>
+                            <p class="t-price">2.42k</p>
+                            <p class="location"><span><img  src="/Navigation.png "  alt=""> </span>07 Days Trip</p>
+                            <p class="blogs"><span><img src="/star 1.png" alt=""></span>4.8</p>
+                            </div>
+                            <div class="col-4 ">
+                                <img src="/Image (p2).png" alt="">
+                                    <h2 class="madrid">Osaka,Japan </h2>
+                                   <p class="t-price">5.42k</p>
+                                    <p class="location"><span><img  src="/Navigation.png "  alt=""> </span>10 Days Trip</p>
+                                    <p class="blogs"><span><img src="/star 1.png" alt=""></span>4.8</p>
+                                    </div>
+             
+              </div>
+            
+                
+             
+              </div>
+</section>        
+    
+<section style="background-color: #F7F8FC;" class="testimonial-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>What people say <span>about us.</span></h2>
+                <p>Our Clients send us bunch of smiles with our services and we love them.</p>
+
+                <!-- Navigation Buttons -->
+                <div class="testimonial-navigation">
+                    <button><</button>
+                    <button>></button>
+                </div>
+            </div>
+
+            <!-- Testimonial Card -->
+            <div class="col-lg-6">
+                <div class="testimonial-card">
+                    <img src="/profile.png" alt="Profile Image">
+                    <blockquote>“On the Windows talking painted pasture yet its express parties use. Sure lost upon he same as knew next. Of believed or diverted no.”</blockquote>
+                    <p class="author">Mike Taylor</p>
+                    <p class="location">Lahore, Pakistan</p>
+
+                    <!-- Nested Section (Chris Thomas) -->
+                    <div class="nested-card">
+                        <p class="author">Chris Thomas</p>
+                        <p class="position">CEO of Red Button</p>
+                    </div>
+                </div>
+
+                <!-- Optional airplane graphic -->
+                <div class="airplane-graphic">
+                    <img src="/Element.png" alt="Airplane Graphic">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    
+<section style="background-color:#FEFCFB;">
+    
+        <div class="container">
+            <h2 class="need">Get update with <span class="journy">latest blog</span></h2>
+            
+                <div class="row blog ">
+                    <div class="col-3 ">
+                      <img src="/last.png" alt="">
+                          <h2 class="madrid">The Amazing Difference a Year of Travelling . </h2>
+                          <p  class="date">July 27, 2021</p>
+                          </div>
+                    
+                    <div class="col-3 ">
+                        <img src="/last (1).png" alt="">
+                        <h2 class="madrid">Travel far enough, you meet yourself. </h2>
+                        <p  class="date">July 27, 2021</p>
+                    </div>
+                    <div class="col-3">
+                      <img src="/last(2).png" alt="">
+                      <h2 class="madrid">How to Save Money While Visiting Africa . </h2>
+                      <p  class="date">July 27, 2021</p>
+                    </div>
+                    <div class="col-3">
+                      <img src="/last(3).png" alt="">
+                      <h2 class="madrid">Reflections on 5 Months of Travel: Time to Hang </h2>
+                      <p class="date">July 27, 2021</p>    
+                    </div>
+                    <div class="slider">
+                        <img src="/Slider.png" alt="">
+                     </div>
+      
+    </div>
+
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+
+            </div>
+            <div class="subscribe-banner">
+             
+                <div class="subscribe-content">
+                    <h2>Subscribe and get exclusive <br> deals & offer </h2>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Enter your mail" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+<div class="col-sm-2">
+                
+</div>
+            </div>
+           
+    </div>
+
+</section>
+
+<section style="background-color: #F7F8FC;">
+    <div class="container">
+    <div class="about">
+        <div  class="heading">
+
+        <h3>Trabook <span><img src="/Vector.png" alt="Logo" style="width: 10px;"></span></h3>
+        <p class="date">Book your trip in minute, get full
+            Control for much longer.</p>
+            <div class="social-icons d-flex justify-content-center">
+                <div class="icon-wrapper">
+                    <a href="#" class="social-icon facebook">
+                        <i class="fab fa-facebook-f"></i> <!-- Font Awesome Facebook icon -->
+                    </a>
+                </div>
+                <div class="icon-wrapper">
+                    <a href="#" class="social-icon instagram">
+                        <i class="fab fa-instagram"></i> <!-- Font Awesome Instagram icon -->
+                    </a>
+                </div>
+                <div class="icon-wrapper">
+                    <a href="#" class="social-icon twitter">
+                        <i class="fab fa-twitter"></i> <!-- Font Awesome Twitter icon -->
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    <div class="aboutText">
+        <h4 style="color: black;">Company</h4>
+        <p>About</p>
+        <p>Careers</p>
+        <p>Logistic</p>
+        <p>Privacy & Policy</p>
+    </div>
+    <div class="aboutText">
+        <h4 style="color: black;">Contact</h4>
+        <p>Help/FAQ</p>
+        <p>Press</p>
+        <p>Affilates</p>
+    </div>
+    <div class="aboutText">
+        <h2 style="color: black;">More</h2>
+        <p>Press Centre</p>
+        <p>Our Blog</p>
+        <p>Low fare tips</p>
+       
+    </div>
+ </div>
+ </div>
+</section > 
+<!-- footer -->
+ <section style="background-color:#F7F8FC;">
+ <div class="container">
+ <footer>
+    <p class="copy">Copyright, TN2024 All rights reserved. <span><p class="right">Terms & Conditions</p></span></p>
+    
+ </footer>
+</div>
+</section>
+
+
+
+
+
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="/figma.js"></script>
+</body>
+</html>
